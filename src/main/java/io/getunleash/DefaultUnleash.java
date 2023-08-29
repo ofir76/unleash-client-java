@@ -186,7 +186,7 @@ public class DefaultUnleash implements Unleash {
                                         }
 
                                         return configuredStrategy.isEnabled(
-                                                strategy.getParameters(), context);
+                                                strategy.getParameters(), context, strategy.getConstraints());
                                     })
                             .findFirst();
         }
