@@ -144,7 +144,7 @@ public class UnleashTest {
 
         unleash.isEnabled("test");
 
-        verify(customStrategy, times(1)).isEnabled(any(), any(UnleashContext.class));
+        verify(customStrategy, times(1)).isEnabled(any(), any(UnleashContext.class), any());
     }
 
     @Test
